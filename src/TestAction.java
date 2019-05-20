@@ -2,13 +2,15 @@
 public class TestAction {
 	
 	String message;
+	String firstName;
 	
 	
 	
 	public String execute() {
 		System.out.println("execute() method called");
-		message="ERROR Message";
-		return "error";
+		message="SUCCESS Message";
+		System.out.println("Name: "+firstName);
+		return "success";
 	}
 
 
@@ -21,6 +23,18 @@ public class TestAction {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	
 	
